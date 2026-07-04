@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const BentoGallery = () => {
   const images = [
-    { src: '/Assets/MANY ITEMS.png', title: 'Pilihan Roti', colSpan: 'md:col-span-2', rowSpan: 'md:row-span-2' },
-    { src: '/Assets/item-withlogo.jpeg', title: 'Bahan Segar', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/withlogo.jpeg', title: 'Seni Memanggang', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/download (1).png', title: 'Suasana Toko Roti', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/download (2).png', title: 'Sentuhan Ahli', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/download (3).png', title: 'Kemasan Premium', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/download (4).png', title: 'Rasa Otentik', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
-    { src: '/Assets/download (5).png', title: 'Tradisi Kami', colSpan: 'md:col-span-2', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/MANY ITEMS.png`, title: 'Pilihan Roti', colSpan: 'md:col-span-2', rowSpan: 'md:row-span-2' },
+    { src: `${import.meta.env.BASE_URL}Assets/item-withlogo.jpeg`, title: 'Bahan Segar', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/withlogo.jpeg`, title: 'Seni Memanggang', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/download (1).png`, title: 'Suasana Toko Roti', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/download (2).png`, title: 'Sentuhan Ahli', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/download (3).png`, title: 'Kemasan Premium', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/download (4).png`, title: 'Rasa Otentik', colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
+    { src: `${import.meta.env.BASE_URL}Assets/download (5).png`, title: 'Tradisi Kami', colSpan: 'md:col-span-2', rowSpan: 'md:row-span-1' },
   ];
 
   return (

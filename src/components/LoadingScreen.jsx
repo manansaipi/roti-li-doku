@@ -13,7 +13,7 @@ const LoadingScreen = ({ onLoaded }) => {
     for (let i = 1; i <= totalFrames; i++) {
       const img = new Image();
       const frameNumber = i.toString().padStart(3, '0');
-      img.src = `/sequence/ezgif-frame-${frameNumber}.jpg`;
+      img.src = `${import.meta.env.BASE_URL}sequence/ezgif-frame-${frameNumber}.jpg`;
       img.onload = () => {
         loaded++;
         setProgress(Math.round((loaded / totalFrames) * 100));
