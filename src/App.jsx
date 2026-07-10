@@ -58,7 +58,10 @@ function App() {
             isScrolling = false;
             delayTimeout = setTimeout(() => { isScrolling = true; }, 2000);
         } else if (isScrolling) {
-            window.scrollBy(0, 1.5);
+            // Faster scroll speed during the image sequence (400vh = winHeight * 4)
+            // Normal speed (1.5) after the image sequence finishes
+            const scrollSpeed = window.scrollY < (winHeight * 3) ? 7 : 1.5;
+            window.scrollBy(0, scrollSpeed);
         }
         scrollFrame = requestAnimationFrame(startScroll);
       };
